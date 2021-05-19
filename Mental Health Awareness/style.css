@@ -1,0 +1,111 @@
+body {
+  background-color: #101010;
+  font-size: 68px;
+  text-shadow: 2px 2px grey; 
+  text-decoration: line-through;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.fake {
+  color: #F0F0F0;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Bold Poppins", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -0.5em;
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+
+span {
+  color: #ffffff;
+  font-family: Bold Poppins, Helvetica, sans-serif;
+  font-size: 0.25em;
+  font-weight: bold;
+  left: 100%;
+  position: absolute;
+  white-space: nowrap;
+  z-index:1;
+}
+img {
+border: 2px dashed;
+border-radius: 46px;
+  image-shadow: 45px;
+  max-height: 80vh;
+  background-size: 90% 74%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: block;
+  max-width: 100%;
+  margin: 8vh auto;
+  filter: drop-shadow(5px 60px 35px rgba(0, 0, 0, 0.4));
+}
+#loading:active {
+        -webkit-animation: rotation 0.5s  linear;
+}
+
+@-webkit-keyframes rotation {
+        from {
+                -webkit-transform: rotate(0deg);
+        }
+        to {
+                -webkit-transform: rotate(180deg);
+        }
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
