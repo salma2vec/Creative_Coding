@@ -1,3 +1,6 @@
+// Disclaimer: The below mentioned "statements" are fictional, created keeping in mind the sentiments of the depressed. 
+// Well, more like, copied from Google. Anyways, the main aim is to spread awareness through this visualization.
+
 var text = [
 		[
 			"Don't worry about me.",
